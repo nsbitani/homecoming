@@ -1,0 +1,32 @@
+{
+“intro”:{
+	“image”:””,
+	“content”:”<p>Do you have family?</p>”,
+	”choices”:{“home”:“Yes”,“halfway”:”No”}
+	}
+“home”:{
+	“image”:””,
+	“content”:”<p>You are home. End the game.</p>”,
+	”choices”:{“end”:”Okay”}
+	}
+“halfway”:{
+	“image”:””,
+	“content”:”<p>You are at a halfway house. End the game.</p>”,
+	”choices”:{“end”:”Okay”}
+	}
+“end”:{
+	“image”:””,
+	“content”:”<p>This is the end of the game.</p>”,
+	”choices”:{“resources”:“Click here”}
+	}
+“resources”:{
+	“image”:””,
+	“content”:”<p>Every component of your game’s story is pulled from the real experiences of real people returning from incarceration. For more information on returning citizens, please see:</p><ul><li>Source One</li><li>Source Two</li></ul>”,
+	”choices”:{“data”:“Click here for details on how the stories and data used in the game were obtained”}
+	}
+“data”:{
+	“image”:””,
+	“content”:”<p>The data was obtained from:</p><ul><li>Source One</li><li>Source Two</li></ul>”,
+	”choices”:{}
+	}
+}

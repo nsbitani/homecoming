@@ -1,1 +1,39 @@
-Hello World
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homecoming: Rebuilding Re-entry</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<div class="page-header" style="text-align:center;">
+      <h1>Homecoming<br><small>Rebuilding Re-entry</small></h1>
+    </div>
+    <div class="container" style="margin:0 auto; text-align:center;">
+      <p>Of the 2,000,000+ people incarcerated in the U.S., 95% will be released someday and 700,000 will be released this year.</p>
+      <p>What is re-entry like for them today?</p>
+      <p>Instructions: Scroll down and click one of the choices at the bottom of the page to progress through the game. Good luck!</p>
+      <ul class="list-group">
+        <li class="list-group-item" role="button" aria-pressed="false" onclick="loadContent()">Click here to begin</a></li>
+      </ul>
+    </div>
+    <script type="text/javascript">
+      function loadContent() {
+      	alert(JSON.stringify(JSON.parse(http://nsbitani.github.io/homecoming/content.txt)));
+      }
+    </script> 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
