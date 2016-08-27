@@ -18,7 +18,7 @@
   	<div class="page-header" style="text-align:center;">
       <h1>Homecoming<br><small>Rebuilding Re-entry</small></h1>
     </div>
-    <div class="container" style="margin:0 auto; text-align:center;">
+    <div id="canvas" class="container" style="margin:0 auto; text-align:center;">
       <p>Of the 2,000,000+ people incarcerated in the U.S., 95% will be released someday and 700,000 will be released this year.</p>
       <p>What is re-entry like for them today?</p>
       <p>Instructions: Scroll down and click one of the choices at the bottom of the page to progress through the game. Good luck!</p>
@@ -27,8 +27,24 @@
       </ul>
     </div>
     <script type="text/javascript">
+      function loadImage() {
+        var banner = document.createElement("img");
+        banner.src = "";
+        document.getElementById("canvas").appendChild(banner);
+      }
+      function loadText() {
+        var text = document.createElement("p");
+        document.getElementById("canvas").appendChild(text);
+      }
+      function loadChoices() {
+        var choices = document.createElement("ul");
+        document.getElementById("canvas").appendChild(choices);
+      }
       function loadContent() {
-      	alert(JSON.stringify(JSON.parse(http://nsbitani.github.io/homecoming/content.txt)));
+        $("#canvas").load("http://nsbitani.github.io/homecoming/content.txt");
+        //loadImage();
+        //loadText();
+        //loadChoices();
       }
     </script> 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
